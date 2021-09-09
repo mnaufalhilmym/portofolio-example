@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: rgba(17, 24, 39, 1);
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/src/img/1623630178478.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.left-bar nav {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.left-bar ul {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  padding-left: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  color: rgba(156, 163, 175, 1);
+  letter-spacing: 0.1em;
+  list-style: none;
+}
+
+.left-bar li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.left-bar a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.right-bar nav {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.right-bar ul {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  padding-left: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  text-align: right;
+  color: rgba(156, 163, 175, 1);
+  letter-spacing: 0.1em;
+  list-style: none;
+}
+
+.right-bar .li-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.right-bar li:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.right-bar a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.introductory {
+  position: absolute;
+  top: 66.666667%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.introductory h1 {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.introductory .me {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  display: flex;
+  height: 1rem;
+  font-size: inherit;
+  line-height: inherit;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.introductory .me h3 {
+  white-space: pre;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.introductory .me #introductory-text {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.introductory h4 {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .left-bar ul {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+  }
+
+  .right-bar ul {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+  }
+
+  .introductory {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .introductory .me {
+    height: 1.25rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .left-bar ul {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .right-bar ul {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .introductory .me {
+    height: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .left-bar nav {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .right-bar nav {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .introductory h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .introductory .me {
+    height: 2.25rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .introductory h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .introductory .me {
+    height: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
