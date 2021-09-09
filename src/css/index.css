@@ -12,7 +12,7 @@ main {
 .background-image {
   width: 100vw;
   height: 100vh;
-  background-image: url("/src/img/1623630178478.jpg");
+  background-image: url("https://www.hilmy.dev/images/1623630178478.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3;
