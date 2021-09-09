@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const introText = document.getElementById("introductory-text");
 
   let counter = 1;
-  let w;
 
   function setIntroTextTransform() {
+    const w = window.innerWidth;
     let size;
 
     if (w >= 1280) {
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   setInterval(() => {
-    w = window.innerWidth;
     setIntroTextTransform();
     
     if (counter < 3) {
@@ -34,14 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3000);
 
   window.addEventListener("resize", () => {
-    const newW = window.innerWidth;
-
-    if (newW >= 1280 && w >= 1280) return;
-    if (newW <= 1280 && newW >= 768 && w <= 1280 && newW >= 768) return;
-    if (newW <= 768 && newW >= 640 && w <= 768 && w >= 640) return;
-    if (newW <= 640 && w <= 640) return;
-
-    w = newW;
     setIntroTextTransform();
   });
 });
